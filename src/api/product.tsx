@@ -1,24 +1,30 @@
-import instance from "./instance";
-import { IProduct } from "../types/product";
+import instance from './instance';
+import { IProduct } from '../types/product';
 
-const getAllProduct = () =>{
-    return instance.get('/products')
-}
+const getAllProduct = () => {
+    return instance.get('/products');
+};
 
-const getOneProduct = (id:any) =>{
-    return instance.get('/products/' + id)
-}
+const getOneProduct = (id: any) => {
+    return instance.get('/products/' + id);
+};
 
-const addProduct = (product: IProduct) =>{
-    return instance.post('/products', product)
-}
+const addProduct = (product: IProduct) => {
+    return instance.post('/products', product);
+};
 
-const deleteProduct = (id:number) =>{
-    return instance.delete('/products/' + id)
-}
+const deleteProduct = (id: number) => {
+    return instance.delete('/products/' + id);
+};
 
-const updateProduct = (product: IProduct) =>{
-    return instance.patch('/products/' + product._id, product)
-}
+const updateProduct = (product: IProduct) => {
+    return instance.patch('/products/' + product._id, product);
+};
 
-export {  getAllProduct, getOneProduct, addProduct, deleteProduct, updateProduct}
+export {
+    getAllProduct,
+    getOneProduct,
+    addProduct,
+    deleteProduct,
+    updateProduct,
+};

@@ -9,28 +9,28 @@ function getItem(
     key: React.Key,
     icon?: React.ReactNode,
     children?: MenuItem[],
-  ): MenuItem {
+): MenuItem {
     return {
-      key,
-      icon,
-      children,
-      label,
+        key,
+        icon,
+        children,
+        label,
     } as MenuItem;
-  }
-  
-  const items: MenuItem[] = [
+}
+
+const items: MenuItem[] = [
     // getItem( <Link to={`/admin`}>Dashboard</Link>,  'dashboard',),
-    getItem(  <Link to={`/`}>Products</Link>, 'products',),
-    getItem(  <Link to={`/register`}>Đăng Ký</Link>, 'register',),
-    getItem(  <Link to={`/login`}>Đăng Nhập</Link>, 'login',),
-  //   getItem('User', 'sub1', <UserOutlined />, [
-  //     getItem('Tom', '3'),
-  //     getItem('Bill', '4'),
-  //     getItem('Alex', '5'),
-  //   ]),
+    getItem(<Link to={`/`}>Products</Link>, 'products'),
+    getItem(<Link to={`/register`}>Đăng Ký</Link>, 'register'),
+    getItem(<Link to={`/login`}>Đăng Nhập</Link>, 'login'),
+    //   getItem('User', 'sub1', <UserOutlined />, [
+    //     getItem('Tom', '3'),
+    //     getItem('Bill', '4'),
+    //     getItem('Alex', '5'),
+    //   ]),
     // getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
     // getItem(<Link to={`/admin/products`}>Categories</Link>, 'categories ', <FileOutlined />),
-  ];
+];
 const WebsiteLayout = () => {
     const {
         token: { colorBgContainer },
@@ -45,7 +45,7 @@ const WebsiteLayout = () => {
                     defaultSelectedKeys={['2']}
                     items={items}
                 />
-                 {/* <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} /> */}
+                {/* <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} /> */}
             </Header>
             <Content style={{ padding: '70px 50px' }}>
                 <div

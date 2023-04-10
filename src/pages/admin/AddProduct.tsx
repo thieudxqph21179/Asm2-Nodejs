@@ -40,7 +40,9 @@ const AddProduct = (props: IProps) => {
                 <input type="number" {...register('price')} />
                 <button type="submit">Add New Product</button>
             </form> */}
-            <h1 style={{ marginTop: 20, marginBottom: 40, marginLeft: 230 }}>Create New Products</h1>
+            <h1 style={{ marginTop: 20, marginBottom: 40, marginLeft: 230 }}>
+                Create New Products
+            </h1>
 
             <Form
                 name="basic"

@@ -1,8 +1,8 @@
-import instance from "./instance";
-import { IUser } from "../types/user";
+import instance from './instance';
+import { IUser } from '../types/user';
 
-const register = (user: IUser) =>{
-    return instance.post('/signup', user)
-}
+const register = (user: IUser) => {
+    return instance.post('/signup', user);
+};
 
-export { register}
+export { register };
