@@ -21,6 +21,8 @@ function getItem(
   const items: MenuItem[] = [
     // getItem( <Link to={`/admin`}>Dashboard</Link>,  'dashboard',),
     getItem(  <Link to={`/`}>Products</Link>, 'products',),
+    getItem(  <Link to={`/register`}>Đăng Ký</Link>, 'register',),
+    getItem(  <Link to={`/login`}>Đăng Nhập</Link>, 'login',),
   //   getItem('User', 'sub1', <UserOutlined />, [
   //     getItem('Tom', '3'),
   //     getItem('Bill', '4'),

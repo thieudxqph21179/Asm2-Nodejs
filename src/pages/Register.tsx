@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Checkbox, Form, Input, message } from "antd";
+import { Button, Checkbox, Divider, Form, Input, message } from "antd";
 import { IUser } from "../types/user";
 import { useNavigate } from "react-router-dom";
 
@@ -23,6 +23,7 @@ const Register = (props: IProps) => {
   };
 
   return (
+    
     <Form
       name="basic"
       labelCol={{ span: 8 }}
@@ -33,6 +34,8 @@ const Register = (props: IProps) => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
+      <Divider orientation="center"><h1>Đăng ký</h1></Divider>
+
       <Form.Item
         label="Name"
         name="name"

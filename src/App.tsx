@@ -3,7 +3,6 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router';
 import HomePage from './pages/HomePage';
-import ProductPage from './pages/Product';
 import ProductDetail from './pages/ProductDetail';
 import ProductManagement from './pages/admin/ProductManagement';
 import UpdateProductPage from './pages/admin/UpdateProduct'
@@ -60,8 +59,7 @@ function App() {
         <Route path='/' element={<WebsiteLayout />}>
             <Route index element={<HomePage products={products} />} />
             <Route path='products'>
-              <Route index element={<ProductPage products={products} onRemove={onHandleRemove}  />} />
-              <Route path=':id' element={<ProductDetail products={products} />} />
+              <Route path=':id' element={<ProductDetail products={products} _id={''} />} />
             </Route>
 
             <Route path="login" element={<Login/>} />
